@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV Online</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header id="header">
+    <h1 class="head">CV Online</h1>
+  </header>
+  <canvas id="canvas"></canvas>
+  <section id="wrapperForMain">
+    <main id="main">
+      <div class="Maininfo">
+        <div class="AddPhoto">
+          <label for="inputForPhoto" class="PhotoLabel">Photo</label>
+          <img class="inputForPhoto" name="inputForPhoto" src="./icons/photo.png" />
+        </div>
+        <div class="wrapper">
+          <div class="ForName">
+            <div class="AddName">
+              <label for="name">Name</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="AddSurname">
+              <label for="surname">Surname</label>
+              <input type="text" id="surname" />
+            </div>
+          </div>
+          <div class="AddEmail">
+            <label for="Email">Email address</label>
+            <input type="email" id="Email" />
+          </div>
+        </div>
+      </div>
+      <div class="DopInfo">
+        <div>
+          <div class="AddHeadLine">
+            <label for="Headline">Position</label>
+            <input type="text" id="Headline" />
+          </div>
+        </div>
+        <div class="AddPhone">
+          <label for="Phone">Phone number</label>
+          <input type="text" id="Phone" />
+        </div>
+        <div class="AddAddress">
+          <label for="Address">Address</label>
+          <input type="text" id="Address" autocomplete="off" />
+        </div>
+      </div>
+      <div class="TownInfo">
+        <div class="AddPostCode">
+          <label for="PostCode">PostCode</label>
+          <input type="text" id="PostCode" autocomplete="off" />
+        </div>
+        <div class="AddCity">
+          <label for="City">City</label>
+          <input type="text" id="City" autocomplete="off" />
+        </div>
+      </div>
+      <div class="Skills">
+        <div class="AddSoftSkills">
+          <label for="softSkill">Soft skills</label>
+          <input type="text" id="softSkill" autocomplete="off" />
+        </div>
+        <div class="AddHardSkills">
+          <label for="softSkill">Hard skills</label>
+          <input type="text" id="hardSkill" autocomplete="off" />
+        </div>
+
+      </div>
+      <div class="wrap">
+        <div class="AddAnotherInfo">
+          <label for="AnotherInfo">Add another information:
+            <button class="btnForAnotherInfo" name="AnotherInfo">+</button>
+          </label>
+        </div>
+        <div class="clearForm">
+          <button class="btnClearForm">Clear form</button>
+        </div>
+        <div class="checkResult">
+          <button class="btnCheckResult">Save result</button>
+        </div>
+
+      </div>
+    </main>
+  </section>
+  <footer id="footer"></footer>
+  <template id="tmpl">
+    <div class="blackBackground">
+      <div class="editPhoto">
+        <button class="btnCloseForm">X</button>
+        <input type="file" class="inputForAddPhoto">
+        <button class="btnSubmit">Add Photo</button>
+      </div>
+    </div>
+  </template>
+  <script type="text/javascript" src="canvas.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>
